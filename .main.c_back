@@ -1,0 +1,168 @@
+/*************************************************************************
+ > File Name: main.c
+ > Author:jonker
+ > address: 杭州图软科技 
+ > Created Time: 2019年09月18日 星期三 15时26分57秒
+ ************************************************************************/
+#include <stdio.h>
+#include <pthread.h>
+#include <sched.h>
+#include <unistd.h>
+#include <string.h>
+#include "IT8951_CMD.h"
+#include "IT8951_USB.h"
+#include "miniGUI.h"
+#include <ft2build.h>
+//#include FT_FREETYPE_H
+//#include FT_GLYPH_H
+#include <freetype/ftoutln.h>
+#include <freetype/ftglyph.h>
+
+
+#define MAX_IMAGE_NUM 11
+//#define IMAGE_NUM 9
+#define GLOBAL_REF   0x02
+#define PART_REF     0x01
+#define IMAGE_PATHS "/usr/picture/image0.bmp", \
+	"/usr/picture/image1.bmp", \
+	"/usr/picture/image2.bmp", \
+	"/usr/picture/image3.bmp", \
+	"/usr/picture/image4.bmp", \
+	"/usr/picture/image5.bmp", \
+	"/usr/picture/image6.bmp", \
+	"/usr/picture/image7.bmp", \
+	"/usr/picture/image8.bmp", \
+	"/usr/picture/image9.bmp", \
+    //NULL
+
+Byte* gpFrameBuf;
+
+pthread_mutex_t frameBuf_mutex;
+
+DWord uiBufLen = 0;
+SystemInfo *Sys_info;	// SystemInfo structure
+
+static int init_device(void) {
+	// 0x12: get device name
+    IT8951_Cmd_Inquiry();
+	// 0x80: get system info
+	if (Sys_info == NULL) {
+	    perror("malloc Sys_info faile.");
+		return -1;
+	}
+	IT8951_Cmd_SysInfo(Sys_info);
+
+	Byte *revBuf = (Byte*)malloc(sizeof(Byte)*16);
+	IT8951_Cmd_MemRead(Sys_info->uiImageBufBase, 16, revBuf);
+	int i;
+	for(i=0; i<16; i++){
+		printf("%d, %X\n", i, revBuf[i]);	
+	}
+
+	// Mode 0: initial
+	IT8951_Cmd_DisplayArea(0, 0, Sys_info->uiWidth, Sys_info->uiHeight, 0, (Sys_info->uiImageBufBase), 1);
+
+	// 初始化显存
+	if(gpFrameBuf == NULL) {
+		perror("malloc gpFrameBuf faile.");
+	    return -1;
+	}
+	perror("init_device!\n");
+	// set full white
+	EPD_Clear(Sys_info, 0x50);
+  //  memset(gpFrameBuf, 0x50, sizeof(unsigned char)*(sys_info->uiWidth * sys_info->uiHeight));
+
+	perror("---init_device!\n");
+	// 0xA2 & 0x94: load & display
+	IT8951_Cmd_LoadImageArea(gpFrameBuf, (Sys_info->uiImageBufBase), 0, 0, Sys_info->uiWidth, Sys_info->uiHeight);  // 
+	IT8951_Cmd_DisplayArea(0, 0, Sys_info->uiWidth, Sys_info->uiHeight, GLOBAL_REF, (Sys_info->uiImageBufBase), 1);
+	// 初始化显存信号锁
+	pthread_mutex_init(&frameBuf_mutex,NULL);    // pthread_mutex_lock  pthread_mutex_unlock
+	return 0;
+}
+
+int main(int argc, char * argv[]) {
+//	int i = 0;
+//	int mode = 2, sencond = 10;
+//    DWord panelW, panelH;
+//	if(argc == 2)
+//		c = atoi(argv[1]);
+	FT_Library	library;
+	FT_Face		face;
+	FT_Error	error;
+	FT_UInt		charIdx;
+	wchar_t		wch = 'a';
+	//int			startX, startY;	// 字符图像开始装入的位置
+	FT_Glyph    glyph;
+
+	perror("star.\n");
+//	printf("star.\n");
+	Sys_info=(SystemInfo*)malloc(sizeof(SystemInfo));
+	if (Sys_info == NULL) {
+	    perror("malloc Sys_info faile.\n");
+		return -1;
+	}
+	printf("star1.\n");
+
+	gpFrameBuf = (unsigned char*)malloc(sizeof(unsigned char)*(Sys_info->uiWidth * Sys_info->uiHeight));
+	if(gpFrameBuf == NULL) {
+		perror("malloc gpFrameBuf faile.\n");
+		return -1;
+	}
+	printf("star2.\n");
+
+
+	if(init_device() < 0) {
+		perror("init device faile.\n");
+	    return -1;
+	}
+	printf("star3.\n");
+
+	// 1. 初始化freetype2库
+	error = FT_Init_FreeType(&library);
+	error = FT_New_Face(library, "/usr/simsunb.ttf", 0, &face);
+	error = FT_Set_Char_Size(face, 16*64, 16*64, 96, 96);
+	if(error < 0)
+        goto error;
+	charIdx = FT_Get_Char_Index(face, wch);
+	FT_Load_Glyph(face, charIdx, FT_LOAD_DEFAULT);
+	if (face->glyph->format == FT_GLYPH_FORMAT_OUTLINE)
+	{
+//		FT_Outline_Embolden(&(face->glyph->outline), 16);	// 加粗轮廓线
+	}
+	if (face->glyph->format != FT_GLYPH_FORMAT_BITMAP)
+	{
+		FT_Render_Glyph(face->glyph, FT_RENDER_MODE_NORMAL);
+	}
+
+	//ft2CopyBitmapToBuf(buffer, startX+face->glyph->bitmap_left,
+	//		startY+face->size->metrics.ascender/64-face->glyph->bitmap_top,
+	//		face->glyph->bitmap);
+	//startX += face->glyph->advance.x/64;
+	error  =  FT_Get_Glyph(face->glyph,  &glyph);
+	if(!error) {
+	    FT_Glyph_To_Bitmap(&glyph, FT_RENDER_MODE_NORMAL, 0, 1);
+		FT_BitmapGlyph   bitmap_glyph  =  (FT_BitmapGlyph)glyph;
+		FT_Bitmap  bitmap  =  bitmap_glyph -> bitmap;
+        EPD_DrawMatrix(*Sys_info, 10, 10, bitmap.rows, bitmap.width, (uint16_t*)bitmap.buffer);
+
+	    IT8951_Cmd_LoadImageArea(gpFrameBuf, (Sys_info->uiImageBufBase), 0, 0, Sys_info->uiWidth, Sys_info->uiHeight);  // 
+    	IT8951_Cmd_DisplayArea(0, 0, Sys_info->uiWidth, Sys_info->uiHeight, GLOBAL_REF, (Sys_info->uiImageBufBase), 1);
+	}
+		
+
+#if 0	
+	// 读取温度
+	TempArg TempTest;
+	TempTest.ucSetTemp = 0;	// 0: read, 1: write
+	TempTest.ucTempVal = 126;	// set value if wanna write
+	IT8951_Cmd_SetTemp(TempTest);
+#endif
+error:
+	FT_Done_Glyph(glyph);
+	glyph  =  NULL;
+	free(Sys_info);	
+	free(gpFrameBuf);
+	pthread_mutex_destroy(&frameBuf_mutex); // 销毁信号锁
+	return EXIT_SUCCESS;
+}

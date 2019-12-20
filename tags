@@ -1,0 +1,286 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ABS	miniGUI.h	54;"	d
+AsciiLib	AsciiLib.c	/^static uint8_t const AsciiLib[95][16] = {$/;"	v	file:
+BITMAPFILEHEADER	miniGUI.h	/^}__attribute__((packed)) BITMAPFILEHEADER;$/;"	t	typeref:struct:__anon2
+BITMAPINFOHEADER	miniGUI.h	/^}__attribute__((packed)) BITMAPINFOHEADER;$/;"	t	typeref:struct:__anon3
+BLOCK_LEN	IT8951_CMD.h	9;"	d
+Bitmap_format_Matrix	miniGUI.c	/^static void Bitmap_format_Matrix(uint8_t *dst,uint8_t *src)$/;"	f	file:	signature:(uint8_t *dst,uint8_t *src)
+Byte	IT8951_CMD.h	/^typedef unsigned char Byte;$/;"	t
+Byte	constant.h	/^typedef unsigned char Byte;$/;"	t
+CC	Makefile	/^CC=arm-linux-gnueabihf-gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -O2 -g -Wall -fmessage-length=0$/;"	m
+COLOR_GRAY0	constant.h	10;"	d
+COLOR_GRAY1	constant.h	11;"	d
+COLOR_GRAY10	constant.h	20;"	d
+COLOR_GRAY11	constant.h	21;"	d
+COLOR_GRAY12	constant.h	22;"	d
+COLOR_GRAY13	constant.h	23;"	d
+COLOR_GRAY14	constant.h	24;"	d
+COLOR_GRAY15	constant.h	25;"	d
+COLOR_GRAY2	constant.h	12;"	d
+COLOR_GRAY3	constant.h	13;"	d
+COLOR_GRAY4	constant.h	14;"	d
+COLOR_GRAY5	constant.h	15;"	d
+COLOR_GRAY6	constant.h	16;"	d
+COLOR_GRAY7	constant.h	17;"	d
+COLOR_GRAY8	constant.h	18;"	d
+COLOR_GRAY9	constant.h	19;"	d
+DWord	IT8951_CMD.h	/^typedef unsigned int DWord;$/;"	t
+DWord	constant.h	/^typedef unsigned int DWord;$/;"	t
+DisplayArg	IT8951_CMD.h	/^}DisplayArg;$/;"	t	typeref:struct:_TDRAW_UPD_ARG_DATA
+DrawMatrix	miniGUI.c	/^void DrawMatrix(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t Width, uint16_t High,const uint8_t* Matrix)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t Width, uint16_t High,const uint8_t* Matrix)
+DrawMatrix	miniGUI.h	/^void DrawMatrix(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t Width, uint16_t High,const uint8_t* Matrix);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t Width, uint16_t High,const uint8_t* Matrix)
+EN_FAST_WRITE_MEM	IT8951_CMD.h	24;"	d
+EPD_Clear	miniGUI.c	/^void EPD_Clear(SystemInfo *gstI80DevInfo, uint8_t Color)$/;"	f	signature:(SystemInfo *gstI80DevInfo, uint8_t Color)
+EPD_Clear	miniGUI.h	/^void EPD_Clear(SystemInfo *gstI80DevInfo, uint8_t Color);$/;"	p	signature:(SystemInfo *gstI80DevInfo, uint8_t Color)
+EPD_DrawBitmap	miniGUI.c	/^void EPD_DrawBitmap(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t *bmp)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t *bmp)
+EPD_DrawBitmap	miniGUI.h	/^void EPD_DrawBitmap(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t *bmp);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t *bmp)
+EPD_DrawCircle	miniGUI.c	/^void EPD_DrawCircle(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint8_t color)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint8_t color)
+EPD_DrawCircle	miniGUI.h	/^void EPD_DrawCircle(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint8_t color);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint8_t color)
+EPD_DrawEllipse	miniGUI.c	/^void EPD_DrawEllipse(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos, uint16_t XRadius, uint16_t YRadius, uint8_t color)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos, uint16_t XRadius, uint16_t YRadius, uint8_t color)
+EPD_DrawEllipse	miniGUI.h	/^void EPD_DrawEllipse(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t XRadius,uint16_t YRadius,uint8_t color);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t XRadius,uint16_t YRadius,uint8_t color)
+EPD_DrawLine	miniGUI.c	/^void EPD_DrawLine(SystemInfo gstI80DevInfo, uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2,uint8_t color)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2,uint8_t color)
+EPD_DrawLine	miniGUI.h	/^void EPD_DrawLine(SystemInfo gstI80DevInfo, uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2,uint8_t color);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2,uint8_t color)
+EPD_DrawMatrix	miniGUI.c	/^void EPD_DrawMatrix(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t Width, uint16_t High,const uint16_t* Matrix)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t Width, uint16_t High,const uint16_t* Matrix)
+EPD_DrawMatrix	miniGUI.h	/^void EPD_DrawMatrix(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t Width, uint16_t High,const uint16_t* Matrix);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos, uint16_t Ypos,uint16_t Width, uint16_t High,const uint16_t* Matrix)
+EPD_DrawPixel	miniGUI.c	/^void EPD_DrawPixel(SystemInfo gstI80DevInfo, uint16_t x0, uint16_t y0, uint8_t color)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t x0, uint16_t y0, uint8_t color)
+EPD_DrawPixel	miniGUI.h	/^void EPD_DrawPixel(SystemInfo gstI80DevInfo, uint16_t x0,uint16_t y0,uint8_t color);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t x0,uint16_t y0,uint8_t color)
+EPD_DrawPolygon	miniGUI.c	/^void EPD_DrawPolygon(SystemInfo gstI80DevInfo, pPoint Points,uint16_t PointCount,uint8_t color)$/;"	f	signature:(SystemInfo gstI80DevInfo, pPoint Points,uint16_t PointCount,uint8_t color)
+EPD_DrawPolygon	miniGUI.h	/^void EPD_DrawPolygon(SystemInfo gstI80DevInfo, pPoint Points,uint16_t PointCount,uint8_t color);$/;"	p	signature:(SystemInfo gstI80DevInfo, pPoint Points,uint16_t PointCount,uint8_t color)
+EPD_DrawRect	miniGUI.c	/^void EPD_DrawRect(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Width,uint16_t Height,uint8_t color)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Width,uint16_t Height,uint8_t color)
+EPD_DrawRect	miniGUI.h	/^void EPD_DrawRect(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Width,uint16_t Height,uint8_t color);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Width,uint16_t Height,uint8_t color)
+EPD_FillCircle	miniGUI.c	/^void EPD_FillCircle(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint8_t color)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint8_t color)
+EPD_FillCircle	miniGUI.h	/^void EPD_FillCircle(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint8_t color);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint8_t color)
+EPD_FillRect	miniGUI.c	/^void EPD_FillRect(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Width,uint16_t Height,uint8_t color)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Width,uint16_t Height,uint8_t color)
+EPD_FillRect	miniGUI.h	/^void EPD_FillRect(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Width,uint16_t Height,uint8_t color);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint16_t Width,uint16_t Height,uint8_t color)
+EPD_PutChar	miniGUI.c	/^void EPD_PutChar(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint8_t ASCI,uint8_t charColor,uint8_t bkColor )$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint8_t ASCI,uint8_t charColor,uint8_t bkColor )
+EPD_PutChar	miniGUI.h	/^void EPD_PutChar(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint8_t ASCI,uint8_t charColor,uint8_t bkColor);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint8_t ASCI,uint8_t charColor,uint8_t bkColor)
+EPD_Text	miniGUI.c	/^void EPD_Text(SystemInfo gstI80DevInfo,  uint16_t Xpos,uint16_t Ypos,uint8_t *str,uint8_t Color,uint8_t bkColor)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint8_t *str,uint8_t Color,uint8_t bkColor)
+EPD_Text	miniGUI.h	/^void EPD_Text(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint8_t *str,uint8_t Color,uint8_t bkColor);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint16_t Xpos,uint16_t Ypos,uint8_t *str,uint8_t Color,uint8_t bkColor)
+EPD_display_Area	main.c	/^static void EPD_display_Area(DWord starX, DWord starY, DWord width, DWord High, int mode);$/;"	p	file:	signature:(DWord starX, DWord starY, DWord width, DWord High, int mode)
+EPD_display_Area	main.c	/^void EPD_display_Area(DWord starX, DWord starY, DWord width, DWord High, int mode) {$/;"	f	signature:(DWord starX, DWord starY, DWord width, DWord High, int mode)
+GLOBAL_REF	main.c	21;"	d	file:
+GetASCIICode	AsciiLib.c	/^void GetASCIICode(uint8_t* pBuffer,uint8_t ASCII)$/;"	f	signature:(uint8_t* pBuffer,uint8_t ASCII)
+GetASCIICode	AsciiLib.h	/^void GetASCIICode(uint8_t* pBuffer,uint8_t ASCII);$/;"	p	signature:(uint8_t* pBuffer,uint8_t ASCII)
+INIT_REF	main.c	23;"	d	file:
+IT8951_CMD_DPY_AREA	IT8951_CMD.c	/^int IT8951_CMD_DPY_AREA(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr){$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr)
+IT8951_CMD_DPY_AREA	IT8951_CMD.h	/^int IT8951_CMD_DPY_AREA(int, int, int, SG_IO_HDR*);$/;"	p	signature:(int, int, int, SG_IO_HDR*)
+IT8951_CMD_INQ	IT8951_CMD.c	/^int IT8951_CMD_INQ(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr) {$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr)
+IT8951_CMD_INQ	IT8951_CMD.h	/^int IT8951_CMD_INQ(int, int, int, SG_IO_HDR*);$/;"	p	signature:(int, int, int, SG_IO_HDR*)
+IT8951_CMD_LOAD_IMG	IT8951_CMD.c	/^int IT8951_CMD_LOAD_IMG(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr){$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr)
+IT8951_CMD_LOAD_IMG	IT8951_CMD.h	/^int IT8951_CMD_LOAD_IMG(int, int, int, SG_IO_HDR*);$/;"	p	signature:(int, int, int, SG_IO_HDR*)
+IT8951_CMD_READ_MEM	IT8951_CMD.c	/^int IT8951_CMD_READ_MEM(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, DWord memAddr, Word length){$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, DWord memAddr, Word length)
+IT8951_CMD_READ_MEM	IT8951_CMD.h	/^int IT8951_CMD_READ_MEM(int, int, int, SG_IO_HDR*, DWord, Word);$/;"	p	signature:(int, int, int, SG_IO_HDR*, DWord, Word)
+IT8951_CMD_READ_REG	IT8951_CMD.c	/^int IT8951_CMD_READ_REG(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, DWord regAddr){$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, DWord regAddr)
+IT8951_CMD_READ_REG	IT8951_CMD.h	/^int IT8951_CMD_READ_REG(int, int, int, SG_IO_HDR*, DWord);$/;"	p	signature:(int, int, int, SG_IO_HDR*, DWord)
+IT8951_CMD_SET_TEMP	IT8951_CMD.c	/^int IT8951_CMD_SET_TEMP(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, Byte TempOption, Byte TempValue) {$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, Byte TempOption, Byte TempValue)
+IT8951_CMD_SET_TEMP	IT8951_CMD.h	/^int IT8951_CMD_SET_TEMP(int, int, int, SG_IO_HDR*, Byte, Byte);$/;"	p	signature:(int, int, int, SG_IO_HDR*, Byte, Byte)
+IT8951_CMD_SYSTEM_INFO	IT8951_CMD.c	/^int IT8951_CMD_SYSTEM_INFO(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr) {$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr)
+IT8951_CMD_SYSTEM_INFO	IT8951_CMD.h	/^int IT8951_CMD_SYSTEM_INFO(int, int, int, SG_IO_HDR*);$/;"	p	signature:(int, int, int, SG_IO_HDR*)
+IT8951_CMD_WRITE_MEM	IT8951_CMD.c	/^int IT8951_CMD_WRITE_MEM(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, DWord memAddr, Word length){$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, DWord memAddr, Word length)
+IT8951_CMD_WRITE_MEM	IT8951_CMD.h	/^int IT8951_CMD_WRITE_MEM(int, int, int, SG_IO_HDR*, DWord, Word);$/;"	p	signature:(int, int, int, SG_IO_HDR*, DWord, Word)
+IT8951_CMD_WRITE_REG	IT8951_CMD.c	/^int IT8951_CMD_WRITE_REG(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, DWord regAddr){$/;"	f	signature:(int fd, int page_code, int evpd, SG_IO_HDR *p_hdr, DWord regAddr)
+IT8951_CMD_WRITE_REG	IT8951_CMD.h	/^int IT8951_CMD_WRITE_REG(int, int, int, SG_IO_HDR*, DWord);$/;"	p	signature:(int, int, int, SG_IO_HDR*, DWord)
+IT8951_Cmd_DisplayArea	IT8951_USB.c	/^void IT8951_Cmd_DisplayArea(DWord dpyX, DWord dpyY, DWord dpyW, DWord dpyH, DWord dpyMode, DWord memAddr, DWord enWaitRdy){$/;"	f	signature:(DWord dpyX, DWord dpyY, DWord dpyW, DWord dpyH, DWord dpyMode, DWord memAddr, DWord enWaitRdy)
+IT8951_Cmd_DisplayArea	IT8951_USB.h	/^void IT8951_Cmd_DisplayArea(DWord, DWord, DWord, DWord, DWord, DWord, DWord);$/;"	p	signature:(DWord, DWord, DWord, DWord, DWord, DWord, DWord)
+IT8951_Cmd_Inquiry	IT8951_USB.c	/^void IT8951_Cmd_Inquiry(void) {$/;"	f	signature:(void)
+IT8951_Cmd_Inquiry	IT8951_USB.h	/^void IT8951_Cmd_Inquiry(void);$/;"	p	signature:(void)
+IT8951_Cmd_LoadImageArea	IT8951_USB.c	/^void IT8951_Cmd_LoadImageArea(DWord memAddr, DWord ldX, DWord ldY, DWord ldW, DWord ldH){$/;"	f	signature:(DWord memAddr, DWord ldX, DWord ldY, DWord ldW, DWord ldH)
+IT8951_Cmd_LoadImageArea	IT8951_USB.h	/^void IT8951_Cmd_LoadImageArea(DWord, DWord, DWord, DWord, DWord);$/;"	p	signature:(DWord, DWord, DWord, DWord, DWord)
+IT8951_Cmd_MemRead	IT8951_USB.c	/^void IT8951_Cmd_MemRead(DWord memAddr, Word length, Byte* revBuf) {$/;"	f	signature:(DWord memAddr, Word length, Byte* revBuf)
+IT8951_Cmd_MemRead	IT8951_USB.h	/^void IT8951_Cmd_MemRead(DWord, Word, Byte*);$/;"	p	signature:(DWord, Word, Byte*)
+IT8951_Cmd_MemWrite	IT8951_USB.c	/^void IT8951_Cmd_MemWrite(DWord memAddr, Word length, Byte* srcBuf) {$/;"	f	signature:(DWord memAddr, Word length, Byte* srcBuf)
+IT8951_Cmd_MemWrite	IT8951_USB.h	/^void IT8951_Cmd_MemWrite(DWord, Word, Byte*);$/;"	p	signature:(DWord, Word, Byte*)
+IT8951_Cmd_RegRead	IT8951_USB.c	/^void IT8951_Cmd_RegRead(DWord regAddr, DWord *rev) {$/;"	f	signature:(DWord regAddr, DWord *rev)
+IT8951_Cmd_RegRead	IT8951_USB.h	/^void IT8951_Cmd_RegRead(DWord, DWord*);$/;"	p	signature:(DWord, DWord*)
+IT8951_Cmd_RegWrite	IT8951_USB.c	/^void IT8951_Cmd_RegWrite(DWord regAddr, DWord *src) {$/;"	f	signature:(DWord regAddr, DWord *src)
+IT8951_Cmd_RegWrite	IT8951_USB.h	/^void IT8951_Cmd_RegWrite(DWord, DWord*);$/;"	p	signature:(DWord, DWord*)
+IT8951_Cmd_SetTemp	IT8951_USB.c	/^void IT8951_Cmd_SetTemp(TempArg SetTemp) {$/;"	f	signature:(TempArg SetTemp)
+IT8951_Cmd_SetTemp	IT8951_USB.h	/^void IT8951_Cmd_SetTemp(TempArg);$/;"	p	signature:(TempArg)
+IT8951_Cmd_SysInfo	IT8951_USB.c	/^void IT8951_Cmd_SysInfo(SystemInfo* Sys_info) {$/;"	f	signature:(SystemInfo* Sys_info)
+IT8951_Cmd_SysInfo	IT8951_USB.h	/^void IT8951_Cmd_SysInfo(SystemInfo*);$/;"	p	signature:(SystemInfo*)
+IT8951_USB_CMD_H	IT8951_CMD.h	3;"	d
+IT8951_USB_INQUIRY	IT8951_CMD.h	14;"	d
+IT8951_USB_OP_DPY_AREA	IT8951_CMD.h	20;"	d
+IT8951_USB_OP_FAST_WRITE_MEM	IT8951_CMD.h	23;"	d
+IT8951_USB_OP_FSET_TEMP	IT8951_CMD.h	22;"	d
+IT8951_USB_OP_GET_SYS	IT8951_CMD.h	15;"	d
+IT8951_USB_OP_LD_IMG_AREA	IT8951_CMD.h	21;"	d
+IT8951_USB_OP_READ_MEM	IT8951_CMD.h	16;"	d
+IT8951_USB_OP_READ_REG	IT8951_CMD.h	18;"	d
+IT8951_USB_OP_WRITE_MEM	IT8951_CMD.h	17;"	d
+IT8951_USB_OP_WRITE_REG	IT8951_CMD.h	19;"	d
+Include_Main	IT8951_USB.h	5;"	d
+LIBS	Makefile	/^LIBS = -I . -lfreetype  -lm$/;"	m
+LoadArg	IT8951_CMD.h	/^}LoadArg;$/;"	t	typeref:struct:_TLOAD_IMG_ARG_DATA
+OBJS	Makefile	/^OBJS=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+PART_REF	main.c	22;"	d	file:
+PIXEL	miniGUI.h	/^}__attribute__((packed)) PIXEL;\/\/颜色模式RGB$/;"	t	typeref:struct:__anon4
+Point	miniGUI.h	/^}Point, *pPoint; $/;"	t	typeref:struct:__anon1
+SCSI_TIMEOUT	IT8951_CMD.h	10;"	d
+SENSE_LEN	IT8951_CMD.h	8;"	d
+SG_IO_HDR	IT8951_CMD.h	/^typedef struct sg_io_hdr SG_IO_HDR;$/;"	t	typeref:struct:sg_io_hdr
+SPT_BUF_SIZE	IT8951_CMD.h	12;"	d
+SRCS	Makefile	/^SRCS=$(wildcard *.c)$/;"	m
+SWAP_16	IT8951_CMD.c	/^Word SWAP_16(Word input){$/;"	f	signature:(Word input)
+SWAP_16	IT8951_CMD.h	/^Word SWAP_16(Word);$/;"	p	signature:(Word)
+SWAP_32	IT8951_CMD.c	/^DWord SWAP_32(DWord input){$/;"	f	signature:(DWord input)
+SWAP_32	IT8951_CMD.h	/^DWord SWAP_32(DWord);$/;"	p	signature:(DWord)
+Show_bmp	miniGUI.c	/^uint8_t Show_bmp(SystemInfo gstI80DevInfo, uint32_t x, uint32_t y,char *path)$/;"	f	signature:(SystemInfo gstI80DevInfo, uint32_t x, uint32_t y,char *path)
+Show_bmp	miniGUI.h	/^uint8_t Show_bmp(SystemInfo gstI80DevInfo, uint32_t x, uint32_t y,char *path);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint32_t x, uint32_t y,char *path)
+Show_linuxfb	miniGUI.c	/^uint8_t Show_linuxfb(SystemInfo gstI80DevInfo, uint32_t x, uint32_t y) {$/;"	f	signature:(SystemInfo gstI80DevInfo, uint32_t x, uint32_t y)
+Show_linuxfb	miniGUI.h	/^uint8_t Show_linuxfb(SystemInfo gstI80DevInfo, uint32_t x, uint32_t y);$/;"	p	signature:(SystemInfo gstI80DevInfo, uint32_t x, uint32_t y)
+Sys_info	main.c	/^static SystemInfo *Sys_info;	\/\/ SystemInfo structure$/;"	v	file:
+SystemInfo	IT8951_CMD.h	/^}SystemInfo;$/;"	t	typeref:struct:_TRSP_SYSTEM_INFO_DATA
+TARGET	Makefile	/^TARGET = e-paper$/;"	m
+TempArg	IT8951_CMD.h	/^}TempArg;$/;"	t	typeref:struct:_TSET_TEMP_ARG_DATA
+Word	IT8951_CMD.h	/^typedef unsigned short Word;$/;"	t
+Word	constant.h	/^typedef unsigned short Word;$/;"	t
+X	miniGUI.h	/^  uint16_t X;$/;"	m	struct:__anon1	access:public
+Y	miniGUI.h	/^  uint16_t Y;$/;"	m	struct:__anon1	access:public
+_CONSTANT_H_	constant.h	8;"	d
+_TDRAW_UPD_ARG_DATA	IT8951_CMD.h	/^typedef struct _TDRAW_UPD_ARG_DATA{$/;"	s
+_TDRAW_UPD_ARG_DATA::iEngineIndex	IT8951_CMD.h	/^    DWord     iEngineIndex;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+_TDRAW_UPD_ARG_DATA::iHeight	IT8951_CMD.h	/^    DWord     iHeight;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+_TDRAW_UPD_ARG_DATA::iMemAddr	IT8951_CMD.h	/^    DWord     iMemAddr;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+_TDRAW_UPD_ARG_DATA::iPosX	IT8951_CMD.h	/^    DWord     iPosX;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+_TDRAW_UPD_ARG_DATA::iPosY	IT8951_CMD.h	/^    DWord     iPosY;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+_TDRAW_UPD_ARG_DATA::iWavMode	IT8951_CMD.h	/^    DWord     iWavMode;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+_TDRAW_UPD_ARG_DATA::iWidth	IT8951_CMD.h	/^    DWord     iWidth;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+_TLOAD_IMG_ARG_DATA	IT8951_CMD.h	/^typedef struct _TLOAD_IMG_ARG_DATA{$/;"	s
+_TLOAD_IMG_ARG_DATA::iAddress	IT8951_CMD.h	/^    DWord     iAddress;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+_TLOAD_IMG_ARG_DATA::iH	IT8951_CMD.h	/^    DWord     iH;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+_TLOAD_IMG_ARG_DATA::iW	IT8951_CMD.h	/^    DWord     iW;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+_TLOAD_IMG_ARG_DATA::iX	IT8951_CMD.h	/^    DWord     iX;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+_TLOAD_IMG_ARG_DATA::iY	IT8951_CMD.h	/^    DWord     iY;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA	IT8951_CMD.h	/^typedef struct _TRSP_SYSTEM_INFO_DATA{$/;"	s
+_TRSP_SYSTEM_INFO_DATA::lpCmdInfoDatas	IT8951_CMD.h	/^	void* lpCmdInfoDatas[1];	\/\/ Command table pointer$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiExtendCmdNo	IT8951_CMD.h	/^	DWord uiExtendCmdNo; 		\/\/ Extend command number$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiFrameCount	IT8951_CMD.h	/^	DWord uiFrameCount[8];		\/\/ Frame count for each mode(8).$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiHeight	IT8951_CMD.h	/^	DWord uiHeight;			\/\/ Panel Height$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiImageBufBase	IT8951_CMD.h	/^	DWord uiImageBufBase;		\/\/ Image Buffer Address$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiModeNo	IT8951_CMD.h	/^	DWord uiModeNo;			\/\/ Display mode number$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiNumImgBuf	IT8951_CMD.h	/^	DWord uiNumImgBuf;		\/\/ Number of image buffer$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiReserved	IT8951_CMD.h	/^	DWord uiReserved[9]; 	$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiSignature	IT8951_CMD.h	/^	DWord uiSignature;		\/\/ 31 35 39 38h (8951)$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiStandardCmdNo	IT8951_CMD.h	/^	DWord uiStandardCmdNo;		\/\/ Standard command number2T-con Communication Protocol$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiTemperatureNo	IT8951_CMD.h	/^	DWord uiTemperatureNo;		\/\/ Temperature segment number$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiUpdateBufBase	IT8951_CMD.h	/^	DWord uiUpdateBufBase; 		\/\/ Update Buffer Address$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiVersion	IT8951_CMD.h	/^	DWord uiVersion;		\/\/ command table version$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiWbfSFIAddr	IT8951_CMD.h	/^	DWord uiWbfSFIAddr;$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TRSP_SYSTEM_INFO_DATA::uiWidth	IT8951_CMD.h	/^	DWord uiWidth;			\/\/ Panel Width$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+_TSET_TEMP_ARG_DATA	IT8951_CMD.h	/^typedef struct _TSET_TEMP_ARG_DATA{$/;"	s
+_TSET_TEMP_ARG_DATA::ucSetTemp	IT8951_CMD.h	/^	Byte ucSetTemp;$/;"	m	struct:_TSET_TEMP_ARG_DATA	access:public
+_TSET_TEMP_ARG_DATA::ucTempVal	IT8951_CMD.h	/^	Byte ucTempVal;$/;"	m	struct:_TSET_TEMP_ARG_DATA	access:public
+_Test_SW_	IT8951_USB.h	18;"	d
+__AsciiLib_H	AsciiLib.h	2;"	d
+__anon1::X	miniGUI.h	/^  uint16_t X;$/;"	m	struct:__anon1	access:public
+__anon1::Y	miniGUI.h	/^  uint16_t Y;$/;"	m	struct:__anon1	access:public
+__anon2::cfReserved	miniGUI.h	/^	uint32_t cfReserved;\/\/保留，值为0$/;"	m	struct:__anon2	access:public
+__anon2::cfSize	miniGUI.h	/^	uint32_t cfSize;\/\/文件大小（字节）$/;"	m	struct:__anon2	access:public
+__anon2::cfType	miniGUI.h	/^	uint16_t cfType;\/\/文件类型，"BM"(0x4D42)$/;"	m	struct:__anon2	access:public
+__anon2::cfoffBits	miniGUI.h	/^	uint32_t cfoffBits;\/\/数据区相对于文件头的偏移量（字节）$/;"	m	struct:__anon2	access:public
+__anon3::ciBitCount	miniGUI.h	/^	uint16_t ciBitCount;\/\/每个像素的位数$/;"	m	struct:__anon3	access:public
+__anon3::ciClrImportant	miniGUI.h	/^	uint32_t ciClrImportant;\/\/指定重要的颜色数，当该域的值等于颜色数时（或者等于0时），表示所有颜色都一样重要$/;"	m	struct:__anon3	access:public
+__anon3::ciClrUsed	miniGUI.h	/^	uint32_t ciClrUsed;\/\/位图使用调色板的颜色数$/;"	m	struct:__anon3	access:public
+__anon3::ciCompress	miniGUI.h	/^	uint32_t ciCompress;\/\/压缩说明$/;"	m	struct:__anon3	access:public
+__anon3::ciHeight	miniGUI.h	/^	uint32_t ciHeight;\/\/高度$/;"	m	struct:__anon3	access:public
+__anon3::ciPlanes	miniGUI.h	/^	uint16_t ciPlanes;\/\/目标设备的位平面数，值为1$/;"	m	struct:__anon3	access:public
+__anon3::ciSize	miniGUI.h	/^	uint32_t ciSize;\/\/40$/;"	m	struct:__anon3	access:public
+__anon3::ciSizeImage	miniGUI.h	/^	uint32_t ciSizeImage;\/\/用字节表示的图像大小，该数据必须是4的倍数$/;"	m	struct:__anon3	access:public
+__anon3::ciWidth	miniGUI.h	/^	uint32_t ciWidth;\/\/宽度$/;"	m	struct:__anon3	access:public
+__anon3::ciXPelsPerMeter	miniGUI.h	/^	uint32_t ciXPelsPerMeter;\/\/目标设备的水平像素数\/米$/;"	m	struct:__anon3	access:public
+__anon3::ciYPelsPerMeter	miniGUI.h	/^	uint32_t ciYPelsPerMeter;\/\/目标设备的垂直像素数\/米$/;"	m	struct:__anon3	access:public
+__anon4::blue	miniGUI.h	/^	uint8_t blue;$/;"	m	struct:__anon4	access:public
+__anon4::green	miniGUI.h	/^	uint8_t green;$/;"	m	struct:__anon4	access:public
+__anon4::red	miniGUI.h	/^	uint8_t red;$/;"	m	struct:__anon4	access:public
+__anon4::reserved	miniGUI.h	/^	uint8_t reserved;$/;"	m	struct:__anon4	access:public
+_miniGUI_H_	miniGUI.h	2;"	d
+blue	miniGUI.h	/^	uint8_t blue;$/;"	m	struct:__anon4	access:public
+bmp_BitCount	miniGUI.c	/^uint8_t  bmp_BitCount;$/;"	v
+bmp_dst_buf	miniGUI.c	/^uint8_t *bmp_dst_buf = NULL;		\/\/ BMP Buffer$/;"	v
+bmp_height	miniGUI.c	/^uint32_t bmp_width, bmp_height;$/;"	v
+bmp_src_buf	miniGUI.c	/^uint8_t *bmp_src_buf = NULL;		\/\/ BMP Buffer$/;"	v
+bmp_width	miniGUI.c	/^uint32_t bmp_width, bmp_height;$/;"	v
+bytesPerLine	miniGUI.c	/^uint32_t bytesPerLine;$/;"	v
+cfReserved	miniGUI.h	/^	uint32_t cfReserved;\/\/保留，值为0$/;"	m	struct:__anon2	access:public
+cfSize	miniGUI.h	/^	uint32_t cfSize;\/\/文件大小（字节）$/;"	m	struct:__anon2	access:public
+cfType	miniGUI.h	/^	uint16_t cfType;\/\/文件类型，"BM"(0x4D42)$/;"	m	struct:__anon2	access:public
+cfoffBits	miniGUI.h	/^	uint32_t cfoffBits;\/\/数据区相对于文件头的偏移量（字节）$/;"	m	struct:__anon2	access:public
+ciBitCount	miniGUI.h	/^	uint16_t ciBitCount;\/\/每个像素的位数$/;"	m	struct:__anon3	access:public
+ciClrImportant	miniGUI.h	/^	uint32_t ciClrImportant;\/\/指定重要的颜色数，当该域的值等于颜色数时（或者等于0时），表示所有颜色都一样重要$/;"	m	struct:__anon3	access:public
+ciClrUsed	miniGUI.h	/^	uint32_t ciClrUsed;\/\/位图使用调色板的颜色数$/;"	m	struct:__anon3	access:public
+ciCompress	miniGUI.h	/^	uint32_t ciCompress;\/\/压缩说明$/;"	m	struct:__anon3	access:public
+ciHeight	miniGUI.h	/^	uint32_t ciHeight;\/\/高度$/;"	m	struct:__anon3	access:public
+ciPlanes	miniGUI.h	/^	uint16_t ciPlanes;\/\/目标设备的位平面数，值为1$/;"	m	struct:__anon3	access:public
+ciSize	miniGUI.h	/^	uint32_t ciSize;\/\/40$/;"	m	struct:__anon3	access:public
+ciSizeImage	miniGUI.h	/^	uint32_t ciSizeImage;\/\/用字节表示的图像大小，该数据必须是4的倍数$/;"	m	struct:__anon3	access:public
+ciWidth	miniGUI.h	/^	uint32_t ciWidth;\/\/宽度$/;"	m	struct:__anon3	access:public
+ciXPelsPerMeter	miniGUI.h	/^	uint32_t ciXPelsPerMeter;\/\/目标设备的水平像素数\/米$/;"	m	struct:__anon3	access:public
+ciYPelsPerMeter	miniGUI.h	/^	uint32_t ciYPelsPerMeter;\/\/目标设备的垂直像素数\/米$/;"	m	struct:__anon3	access:public
+data_buffer	IT8951_USB.c	/^unsigned char data_buffer[BLOCK_LEN*256];$/;"	v
+destroy_io_hdr	IT8951_CMD.c	/^void destroy_io_hdr(SG_IO_HDR * p_hdr) {$/;"	f	signature:(SG_IO_HDR * p_hdr)
+destroy_io_hdr	IT8951_CMD.h	/^void destroy_io_hdr(SG_IO_HDR *);$/;"	p	signature:(SG_IO_HDR *)
+evpd	IT8951_USB.c	/^int evpd = 0, page_code = 0;$/;"	v
+fbfd	miniGUI.c	/^uint32_t fbfd = 0;					\/\/ \/dev\/fb0 文件描述符$/;"	v
+fbp	miniGUI.c	/^uint8_t *fbp = 0;					\/\/ 内存映射指针$/;"	v
+gpFrameBuf	main.c	/^Byte* gpFrameBuf;$/;"	v
+green	miniGUI.h	/^	uint8_t green;$/;"	m	struct:__anon4	access:public
+gulPanelH	IT8951_USB.c	/^DWord gulPanelW, gulPanelH;$/;"	v
+gulPanelH	main.c	/^static DWord gulPanelW, gulPanelH;$/;"	v	file:
+gulPanelW	IT8951_USB.c	/^DWord gulPanelW, gulPanelH;$/;"	v
+gulPanelW	main.c	/^static DWord gulPanelW, gulPanelH;$/;"	v	file:
+iAddress	IT8951_CMD.h	/^    DWord     iAddress;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+iEngineIndex	IT8951_CMD.h	/^    DWord     iEngineIndex;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+iH	IT8951_CMD.h	/^    DWord     iH;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+iHeight	IT8951_CMD.h	/^    DWord     iHeight;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+iMemAddr	IT8951_CMD.h	/^    DWord     iMemAddr;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+iPosX	IT8951_CMD.h	/^    DWord     iPosX;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+iPosY	IT8951_CMD.h	/^    DWord     iPosY;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+iW	IT8951_CMD.h	/^    DWord     iW;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+iWavMode	IT8951_CMD.h	/^    DWord     iWavMode;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+iWidth	IT8951_CMD.h	/^    DWord     iWidth;$/;"	m	struct:_TDRAW_UPD_ARG_DATA	access:public
+iX	IT8951_CMD.h	/^    DWord     iX;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+iY	IT8951_CMD.h	/^    DWord     iY;$/;"	m	struct:_TLOAD_IMG_ARG_DATA	access:public
+imageSize	miniGUI.c	/^uint32_t imageSize;$/;"	v
+init_device	main.c	/^static void init_device(void) {$/;"	f	file:	signature:(void)
+init_io_hdr	IT8951_CMD.c	/^SG_IO_HDR* init_io_hdr() {$/;"	f
+init_io_hdr	IT8951_CMD.h	/^SG_IO_HDR* init_io_hdr(void);$/;"	p	signature:(void)
+lpCmdInfoDatas	IT8951_CMD.h	/^	void* lpCmdInfoDatas[1];	\/\/ Command table pointer$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+main	main.c	/^int main(int argc, char * argv[]) {$/;"	f	signature:(int argc, char * argv[])
+pPoint	miniGUI.h	/^}Point, *pPoint; $/;"	t	typeref:struct:__anon1
+page_code	IT8951_USB.c	/^int evpd = 0, page_code = 0;$/;"	v
+palette	miniGUI.c	/^PIXEL    palette[256];$/;"	v
+path	IT8951_USB.c	/^char *path = "\/dev\/sg0";$/;"	v
+red	miniGUI.h	/^	uint8_t red;$/;"	m	struct:__anon4	access:public
+reserved	miniGUI.h	/^	uint8_t reserved;$/;"	m	struct:__anon4	access:public
+sense_buffer	IT8951_USB.c	/^unsigned char sense_buffer[SENSE_LEN];$/;"	v
+set_sense_data	IT8951_CMD.c	/^void set_sense_data(SG_IO_HDR * p_hdr, unsigned char * data, unsigned int length) {$/;"	f	signature:(SG_IO_HDR * p_hdr, unsigned char * data, unsigned int length)
+set_sense_data	IT8951_CMD.h	/^void set_sense_data(SG_IO_HDR * p_hdr, Byte * data, DWord length);$/;"	p	signature:(SG_IO_HDR * p_hdr, Byte * data, DWord length)
+set_xfer_data	IT8951_CMD.c	/^void set_xfer_data(SG_IO_HDR * p_hdr, void * data, unsigned int length) {$/;"	f	signature:(SG_IO_HDR * p_hdr, void * data, unsigned int length)
+set_xfer_data	IT8951_CMD.h	/^void set_xfer_data(SG_IO_HDR * p_hdr, void * data, DWord length);$/;"	p	signature:(SG_IO_HDR * p_hdr, void * data, DWord length)
+show_sense_buffer	IT8951_USB.c	/^void show_sense_buffer(struct sg_io_hdr * hdr) {$/;"	f	signature:(struct sg_io_hdr * hdr)
+show_sense_buffer	IT8951_USB.h	/^void show_sense_buffer(SG_IO_HDR*);$/;"	p	signature:(SG_IO_HDR*)
+skip	miniGUI.c	/^uint32_t skip;$/;"	v
+ucSetTemp	IT8951_CMD.h	/^	Byte ucSetTemp;$/;"	m	struct:_TSET_TEMP_ARG_DATA	access:public
+ucTempVal	IT8951_CMD.h	/^	Byte ucTempVal;$/;"	m	struct:_TSET_TEMP_ARG_DATA	access:public
+uiExtendCmdNo	IT8951_CMD.h	/^	DWord uiExtendCmdNo; 		\/\/ Extend command number$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiFrameCount	IT8951_CMD.h	/^	DWord uiFrameCount[8];		\/\/ Frame count for each mode(8).$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiHeight	IT8951_CMD.h	/^	DWord uiHeight;			\/\/ Panel Height$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiImageBufBase	IT8951_CMD.h	/^	DWord uiImageBufBase;		\/\/ Image Buffer Address$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiModeNo	IT8951_CMD.h	/^	DWord uiModeNo;			\/\/ Display mode number$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiNumImgBuf	IT8951_CMD.h	/^	DWord uiNumImgBuf;		\/\/ Number of image buffer$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiReserved	IT8951_CMD.h	/^	DWord uiReserved[9]; 	$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiSignature	IT8951_CMD.h	/^	DWord uiSignature;		\/\/ 31 35 39 38h (8951)$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiStandardCmdNo	IT8951_CMD.h	/^	DWord uiStandardCmdNo;		\/\/ Standard command number2T-con Communication Protocol$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiTemperatureNo	IT8951_CMD.h	/^	DWord uiTemperatureNo;		\/\/ Temperature segment number$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiUpdateBufBase	IT8951_CMD.h	/^	DWord uiUpdateBufBase; 		\/\/ Update Buffer Address$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiVersion	IT8951_CMD.h	/^	DWord uiVersion;		\/\/ command table version$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiWbfSFIAddr	IT8951_CMD.h	/^	DWord uiWbfSFIAddr;$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+uiWidth	IT8951_CMD.h	/^	DWord uiWidth;			\/\/ Panel Width$/;"	m	struct:_TRSP_SYSTEM_INFO_DATA	access:public
+vinfo	miniGUI.c	/^struct   fb_var_screeninfo vinfo; 	\/\/ 记录用户可修改的显示控制器参数$/;"	v	typeref:struct:fb_var_screeninfo
